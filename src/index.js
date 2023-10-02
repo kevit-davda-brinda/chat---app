@@ -49,7 +49,7 @@ io.on('connection', (server_socket) => {
 
         const user = getUser(server_socket.id);
 
-        console.log(user.userName);
+        // console.log(user.userName);
 
         const filter = new Filter();
 
