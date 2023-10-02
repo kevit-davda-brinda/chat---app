@@ -113,8 +113,6 @@ client_socket.emit('join', ({ username, room }), (error) => {
 });
 
 client_socket.on('roomData', ({ room, users }) => {
-    console.log(room);
-    console.log(users);
 
     const html = Mustache.render($slideBarTamplate, { room, users });
 
